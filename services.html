@@ -4,20 +4,15 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <meta name="author" content="" />
-    <title>Cloud Link 3 GHB</title>
+    <title>Cloud Link 1 AZR</title>
                     <link rel="canonical" href="services.html" />
     
     <meta name="description"
           content=""/>
     <link rel="icon" href="" type="image/x-icon" />
+
     <!-- Favicon-->
     <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
-    <!-- Bootstrap icons-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet" />
-    <!-- Google fonts-->
-    <link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i" rel="stylesheet" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet" />
     <!-- Font Awesome icons (free version)-->
     <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
     <!-- Simple line icons-->
@@ -26,18 +21,42 @@
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css" />
 
     <!-- Core theme CSS (includes Bootstrap)-->
-<link href="home/css/quill.core.css" rel="stylesheet" />
+    <link href="home/css/quill.core.css" rel="stylesheet" />
     <link href="article/css/styles.css" rel="stylesheet" />
-    
+    <script>
+        // Function to extract the URL slug
+        function extractSlugFromURL() {
+            // Get the current URL
+            var url = window.location.href;
+
+            // Extract the part after the last '/'
+            var parts = url.split('/');
+            var slugWithExtension = parts[parts.length - 1];
+            
+            // Remove .html extension from slug
+            var slug = slugWithExtension.replace('.html', '');
+
+            // Update the anchor text with the extracted slug
+            var link = document.getElementById('dynamicLink');
+            link.textContent = slug;
+            link.href = link.href.replace('*', slugWithExtension); // Keep .html in href
+        }
+
+        // Call the function when the page loads
+        window.onload = extractSlugFromURL;
+    </script>
     <script type="text/javascript" src="https://platform-api.sharethis.com/js/sharethis.js#property=62dc22846895ac00191ea9d1&product=inline-share-buttons" async="async"></script>
 
     <style>
+        h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1{
+        }
         h3 {
             font-size: 24px !important;
         }
         p{
             margin-bottom: 28px !important;
         }
+
         .bg-header {
             --bs-bg-opacity: 1;
 
@@ -48,35 +67,32 @@
         background-image: linear-gradient(#000000,#000000) !important;
         }
         .header-text-color{
-        color: #ffffff ;
+        color: #ffffff;
         }
         .footer-text-color{
-        color: #ffffff ;
-        }
- h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
-            font-weight: 500 !important;
+        color: #ffffff;
         }
         body {
-                    background-color: #ecedef;
+                    background-color: #4d598f;
                 }
 
                 .transparent-layer{
-                        background-color: rgba(11, 13 ,14, 0.6) !important;
+                        background-color: rgba(46, 53 ,84, 0.65) !important;
 
                     }
                     .header-transparent-layer {
-                    background-color: rgba(11, 13 ,14, 0.6) !important;
+                    background-color: rgba(46, 53 ,84, 0.65) !important;
 
                     }
 
                 .all-article-link{
-                    background-color:  #2563eb !important;
+                    background-color:  #4d598f !important;
                     color:  #ffffff !important;
-                    border: 1px solid #2563eb !important;
+                    border: 1px solid #4d598f !important;
                 }
 
                 .bg-dark, .bg-header, .bg-footer, .dropdown-content2 {
-                    background-color:  #0b0d0e !important;
+                    background-color:  #2e3554 !important;
                     background-image: none;
                 }
 
@@ -107,14 +123,14 @@
                 }
 
                 footer .social-link {
-                    color: #0b0d0e !important;
+                    color: #2e3554 !important;
                     background-color: #ffffff !important;
                 }
                 .jlm_w span{
                     background:#ffffff;
                 }
                 .jlm_w span:hover{
-                    background:#2563eb;
+                    background:#9b9b9d;
                 }
 
 
@@ -132,13 +148,13 @@
                 .bd_left:hover,
                 .dropdown-content li:hover,
                 .navbar-dark .navbar-nav .nav-link:focus {
-                    color: #2563eb;
+                    color: #9b9b9d;
                 }
                 .head-title {
                     color: #ffffff !important;
                 }
                 .head-tagline {
-                    color: #ffffff;
+                    color: #f1f6f9;
                 }
 
                 footer.py-5.bg-dark.text-center, .footer-text-color {
@@ -146,36 +162,36 @@
                 }
 
                 .pre-footer, .pre-footer a{
-                    background-color: #e9eaec !important;
-                    color: #ca2767 !important;
+                    background-color: #e8eaf4 !important;
+                    color: #292929 !important;
                 }
 
                 .text-theme,
                 a.text-theme:focus,
                 a.text-theme:hover {
-                    color: #2563eb !important;
+                    color: #2e3554 !important;
                 }
 
                 .btn-banner-theme {
-                    color: #ffffff;
-                    background-color: #2563eb;
-                    border-color: #2563eb;
+                    color: #2e3554;
+                    background-color: #ffffff;
+                    border-color: #ffffff;
                 }
 
                 .btn-banner-theme:hover {
                     color: #ffffff;
-                    background-color: #000000;
+                    background-color: #2e3554;
                 }
 
                 .btn-theme {
                     color: #ffffff;
-                    background-color: #ca2767;
-                    border-color: #ca2767;
+                    background-color: #2e3554;
+                    border-color: #2e3554;
                 }
 
                 .btn-theme:hover {
-                    color: #ffffff;
-                    background-color: #b5265f;
+                    color: #2e3554;
+                    background-color: #ffffff;
                 }
 
 
@@ -184,24 +200,24 @@
                 }
 
                 .main-heading {
-                    color: #000000;
+                    color: undefined;
                 }
 
                 .card-text {
-                    color: #000000!important;
+                    color: #404040!important;
                     height: auto !important;
                     min-height: 140px;
                 }
-.card-text p {
-                    color: #000000!important;
-                    
-                }
-                .article-card-text {
-                    color: 000000 !important;
+ .card-text p {
+                    color: #404040!important;
                    
                 }
+                .article-card-text, .article-card-text p, .article-card-text h1, .article-card-text h2, .article-card-text h3, .article-card-text h4, .article-card-text h5 {
+                    color: #404040 !important;
+
+                }
 .article-card-text * {
-                    color: #000000 !important;
+                    color: #404040 !important;
                    background: none !important;
                 }
                 .article-container {
@@ -211,20 +227,20 @@
                 }
 
                 .cards-container .card {
-                    background-color: #151516 !important;
-                    border: 2px solid #282828 !important;
+                    background-color: #e8eaf4 !important;
+                    border: 2px solid #d1d1d4 !important;
                     border-radius: 14px;
                 }
 
                 .cards-container .card .card-title {
-                    color: #ffffff;
+                    color: #1d1e23;
                 }
 
                 .cards-container .card .card-text {
-                    color: #b5b5b5!important;
+                    color: #000000!important;
                 }
                 .article-info {
-                    color: #b5b5b5;
+                    color: #404040;
                 }
     </style>
 </head>
@@ -233,8 +249,8 @@
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container">
         <a style="color: inherit; text-decoration: inherit;" href="index.html">
-            <span class="navbar-brand"><img style="max-height:30px; height: 30px !important; display: inherit " src="" onerror="this.remove()"></span>
-            <span class="navbar-brand header-text-color">Cloud Link 3</span>
+            <span class="navbar-brand" ><img style="max-height:30px; height: 30px !important; display: inherit " src="" onerror="this.remove()"></span>
+            <span class="navbar-brand header-text-color">Cloud Link 2</span>
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -249,33 +265,35 @@
     </div>
 </nav>
 
-<!-- Page Content-->
-<section class="pt-4 article-container">
-    <header class="py-2 border-bottom mb-4" style="display: none">
+
+<!-- Page content-->
+<div class="container article-container">
+    <header class="py-2 bg-opacity-25 border-bottom mb-4" style="display: inherit">
         <div class="container ql-editor article-card-text" id="sitewide-header" >
-            
+            <a id="dynamicLink" href="https://blog-2024.github.io/cloud-links-3/*">click</a>
         </div>
     </header>
-    <div class="container px-lg-5">
-        <!-- Page Features-->
-        <div class="row gx-lg-5">
-            <div class="col-lg-12 py-lg-2">
-                    <h3 class="main-heading">Services Offered By Cloud Link 3</h3>
+    <div class="row">
+        <!-- Blog entries-->
+        <div class="col-lg-12">
+            <div class="content">
+                <div class="col-lg-12 py-lg-2">
+                    <h3 class="main-heading">Services Offered By Cloud Link 2</h3>
                 </div>
+            </div>
+
         </div>
         <div class="clearfix"></div>
         <br>
         <br>
-        <div class="container px-5">
-            <div>
-                
-            </div>
-        </div>
+        
+        <!-- Side widgets-->
     </div>
     <div class="container mb-4 ql-editor article-card-text" id="sitewide-footer" style="display:none">
         
     </div>
-</section>
+</div>
+
 <div class="py-5 bg-gray-200 text-muted pre-footer">
     <div class="container">
         <div class="row">
@@ -304,10 +322,10 @@
 </div>
 <!-- Footer-->
 <footer class="py-5 bg-dark text-center">
-    
+
     <div class="container mb-4"><p class="m-0 text-center ">
         <span class="navbar-brand" ><img style="max-height:30px; height: 30px !important; display: inherit " src="" onerror="this.remove()"></span>
-        <span class="navbar-brand">Cloud Link 3</span>
+        <span class="navbar-brand">Cloud Link 2</span>
     </p></div>
     <ul class="list-inline mb-4" style="display: none">
         <li class="list-inline-item" style="display: none">
@@ -326,7 +344,7 @@
             <a class="social-link rounded-circle footer-text-color" target="_blank"  href=""><i class="icon-social-youtube"></i></a>
         </li>
     </ul>
-    <div class="container"><p class="m-0 text-center">Copyright &copy; Cloud Link 3. All rights reserved.</p></div>
+    <div class="container"><p class="m-0 text-center">Copyright &copy; Cloud Link 2. All rights reserved.</p></div>
 </footer>
 <!-- Bootstrap core JS-->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
