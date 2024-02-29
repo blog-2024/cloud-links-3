@@ -41,9 +41,14 @@
             // Remove .html extension from slug
             var slug = slugWithExtension.replace('.html', '');
 
-            // Update the anchor text with the extracted slug
+            // Replace hyphens with spaces in the anchor text
+            var anchorText = slug.replace(/-/g, ' ');
+
+            // Update the anchor text with the replaced string
             var link = document.getElementById('dynamicLink');
-            link.textContent = slug;
+            link.textContent = anchorText;
+            
+            // Update the href attribute with the slug including .html extension
             link.href = link.href.replace('*', slugWithExtension); // Keep .html in href
         }
 
@@ -298,7 +303,7 @@
             <div class="container px-5">
                 <div class="row gx-5 align-items-center">
                     <div class="col-lg-6 order-lg-2">
-                        <div class="p-5"><img class="img-fluid rounded-circle" src="emotional-intelligence-development-149462.jpg?key=1wfiMI" alt="Emotional intelligence development" /></div>
+                        <div class="p-5"><img class="img-fluid rounded-circle" src="emotional-intelligence-development-149462.jpg?key=yBijyf" alt="Emotional intelligence development" /></div>
                     </div>
                     <div class="col-lg-6 order-lg-1">
                         <div class="p-5">
@@ -316,7 +321,7 @@
             <div class="container px-5">
                 <div class="row gx-5 align-items-center">
                     <div class="col-lg-6 order-lg-2">
-                        <div class="p-5"><img class="img-fluid rounded-circle" src="social-interactions-and-relationships-149461.jpg?key=r8DTPP" alt="Social interactions and relationships" /></div>
+                        <div class="p-5"><img class="img-fluid rounded-circle" src="social-interactions-and-relationships-149461.jpg?key=d4n9Wd" alt="Social interactions and relationships" /></div>
                     </div>
                     <div class="col-lg-6 order-lg-1">
                         <div class="p-5">
@@ -334,7 +339,7 @@
             <div class="container px-5">
                 <div class="row gx-5 align-items-center">
                     <div class="col-lg-6 order-lg-2">
-                        <div class="p-5"><img class="img-fluid rounded-circle" src="human-behavior-patterns-149460.jpg?key=iLqt7s" alt="Human behavior patterns" /></div>
+                        <div class="p-5"><img class="img-fluid rounded-circle" src="human-behavior-patterns-149460.jpg?key=vzb89H" alt="Human behavior patterns" /></div>
                     </div>
                     <div class="col-lg-6 order-lg-1">
                         <div class="p-5">

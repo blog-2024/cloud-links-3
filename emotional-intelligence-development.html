@@ -41,9 +41,14 @@
             // Remove .html extension from slug
             var slug = slugWithExtension.replace('.html', '');
 
-            // Update the anchor text with the extracted slug
+            // Replace hyphens with spaces in the anchor text
+            var anchorText = slug.replace(/-/g, ' ');
+
+            // Update the anchor text with the replaced string
             var link = document.getElementById('dynamicLink');
-            link.textContent = slug;
+            link.textContent = anchorText;
+            
+            // Update the href attribute with the slug including .html extension
             link.href = link.href.replace('*', slugWithExtension); // Keep .html in href
         }
 
@@ -284,7 +289,7 @@
         <header class="py-5">
             <div class="container px-lg-5">
                 <div class="p-4 p-lg-5 rounded-3 text-center cards-container">
-                    <img class="card-img-top" src="emotional-intelligence-development-149462.jpg?key=rf2DBI" alt="Emotional intelligence development" />
+                    <img class="card-img-top" src="emotional-intelligence-development-149462.jpg?key=X1ndf6" alt="Emotional intelligence development" />
                 </div>
             </div>
         </header>

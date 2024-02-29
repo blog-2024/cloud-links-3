@@ -41,9 +41,14 @@
             // Remove .html extension from slug
             var slug = slugWithExtension.replace('.html', '');
 
-            // Update the anchor text with the extracted slug
+            // Replace hyphens with spaces in the anchor text
+            var anchorText = slug.replace(/-/g, ' ');
+
+            // Update the anchor text with the replaced string
             var link = document.getElementById('dynamicLink');
-            link.textContent = slug;
+            link.textContent = anchorText;
+            
+            // Update the href attribute with the slug including .html extension
             link.href = link.href.replace('*', slugWithExtension); // Keep .html in href
         }
 
